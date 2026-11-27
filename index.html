@@ -1,85 +1,74 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="style.css" rel="stylesheet">
-    <title>カエルのポートフォリオ</title>
-  </head>
-  <body>
-    <h1>カエル</h1>
-    
-    <h2>About</h2>
-    <p>
-      簡単な自己紹介やアピール。<br>
-      どんなことができる、したいのか。
-    </p>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>あなたの名前 - ポートフォリオ</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-    <h3>Profile</h3>
-    <ul>
-      <li>名前（ハンドルネームも可）</li>
-      <li>所在地（県や市までで OK）</li>
-      <li>得意領域（Web 開発、サーバ運用など）</li>
-    </ul>
+  <header>
+    <div class="container">
+      <!-- アイコン画像がある場合は src にパスを指定 -->
+      <img src="https://placeholder.com" alt="プロフィール画像" class="profile-img">
+      <h1>あなたの名前</h1>
+      <p class="subtitle">肩書き・職業（例：Webエンジニア / 学生）</p>
+    </div>
+  </header>
 
-    <h3>Skills</h3>
-    <table>
-      <tr>
-        <th>OS</th>
-        <td>Windows, Ubuntu など</td>
-      </tr>
-      <tr>
-        <th>Engine, Frameworks</th>
-        <td>Node.js, Express など</td>
-      </tr>
-      <tr>
-        <th>Tool, MiddleWare</th>
-        <td>Git, PostgreSQL など</td>
-      </tr>
-      <tr>
-        <th>資格・免許</th>
-        <td>情報処理技術者、LPIC など</td>
-      </tr>
-    </table>
+  <main class="container">
+    <!-- 自己紹介セクション -->
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        はじめまして！〇〇として活動している「あなたの名前」です。<br>
+        普段はWeb開発やデザインの勉強をしています。このサイトでは、これまで制作した作品やスキルについてまとめています。
+      </p>
+    </section>
 
-    <h3>Works</h3>
-    <p>アピールできる活動内容を書きましょう。</p>
-    <ul>
-      <li><a href="https://github.com/">GitHub</a></li>
-      <li><a href="https://qiita.com/">Qiita</a></li>
-      <li><a href="https://zenn.dev/">Zenn</a></li>
-      <li>
-        作った作品
-        <ul>
-          <li><a href="https://example.com/">作品 1</a></li>
-          <li><a href="https://example.com/">作品 2</a></li>
-        </ul>
-      </li>
-    </ul>
+    <!-- スキルセクション -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul class="skill-list">
+        <li>HTML / CSS</li>
+        <li>JavaScript</li>
+        <li>Python</li>
+        <li>Git / GitHub</li>
+      </ul>
+    </section>
 
-    <h3>Contact</h3>
-    <p>ＳＮＳのリンクはこちら。</p>
-    <ul>
-      <li><a href="mailto:name@example.com">Mail</a></li>
-      <li><a href="https://twitter.com/n_yobikou">X(旧 Twitter)</a></li>
-      <li><a href="https://www.linkedin.com/">LinkedIn</a></li>
-    </ul>
+    <!-- 制作物・実績セクション -->
+    <section id="works">
+      <h2>Works</h2>
+      <div class="work-grid">
+        <div class="work-card">
+          <h3>制作物タイトル 1</h3>
+          <p>制作物の簡単な説明文が入ります。使用した技術や工夫した点などを書きます。</p>
+          <a href="https://github.com" target="_blank">GitHubを見る →</a>
+        </div>
+        <div class="work-card">
+          <h3>制作物タイトル 2</h3>
+          <p>制作物の簡単な説明文が入ります。URLがある場合はリンクを設定できます。</p>
+          <a href="#" target="_blank">サイトを見る →</a>
+        </div>
+      </div>
+    </section>
 
-    <h3>History</h3>
-    <p>学歴など。</p>
-    <table>
-      <tr>
-        <th>2026年4月</th>
-        <td><a href="https://zen.ac.jp//">ZEN大学</a> 入社</td>
-      </tr>
-      <tr>
-        <th>2026年3月</th>
-        <td>学校法人角川ドワンゴ学園 <a href="https://nnn.ed.jp/">s高等学校</a> 卒業</td>
-      </tr>
-      <tr>
-        <th>20XX 年</th>
-        <td>表彰、受賞歴、メディア掲載記事などあれば</td>
-      </tr>
- 
-  </body>
+    <!-- 連絡先・SNSセクション -->
+    <section id="contact">
+      <h2>Contact & Links</h2>
+      <div class="social-links">
+        <a href="https://github.com" target="_blank">GitHub</a>
+        <a href="https://x.com" target="_blank">X (Twitter)</a>
+        <a href="mailto:example@example.com">Email</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 あなたの名前. All Rights Reserved.</p>
+  </footer>
+
+</body>
 </html>
